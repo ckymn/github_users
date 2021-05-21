@@ -77,7 +77,7 @@ const GithubProvider = ({ children }) => {
   // get initial user
   useEffect(() => {
     searchGithubUser('ckymn');
-  }, []);
+  });
   return (
     <GithubContext.Provider
       value={{
