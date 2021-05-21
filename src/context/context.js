@@ -75,9 +75,9 @@ const GithubProvider = ({ children }) => {
   // error
   useEffect(checkRequests, []);
   // get initial user
-  useEffect(() => {
+  /* useEffect(() => {
     searchGithubUser('ckymn');
-  });
+  },0); */
   return (
     <GithubContext.Provider
       value={{
