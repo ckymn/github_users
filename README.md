@@ -10,6 +10,8 @@
 - React Scripts
 - Auth0 (auth0/auth0-react)
 
+# [Project Demo](https://c-github.netlify.app/)
+
 ## Styled Components
 
 [Styled-Components](https://styled-components.com/)
