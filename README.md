@@ -3,7 +3,7 @@
 - Styled-Component
 - Context-API
 - Github API
-- Fushion Charts
+- Fusion Charts
 - Axios
 - React Dom
 - React Icons
