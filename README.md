@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+## KULLANILACAK TEKNOLOJİLER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Styled-Component
+- Context-API
+- Github API
+- Fushion Charts
+- Axios
+- React Dom
+- React Icons
+- React Scripts
+- Auth0 (auth0/auth0-react)
 
-## Available Scripts
+## Styled Components
 
-In the project directory, you can run:
+[Styled-Components](https://styled-components.com/)
 
-### `yarn start`
+```jsx
+import styled from "styled-components";
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+const ReactComponent = () => {
+ // logic here
+ return <Wrapper>
+ {some content}
+ </Wrapper>
+}
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+const Wrapper = styled.htmlElement`
+write your styles here
+`
+export default ReactComponent
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## React Icons
 
-### `yarn build`
+[React Icons - Main Docs](https://react-icons.github.io/react-icons/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```jsx
+import { FiUsers, FiUserPlus } from 'react-icons/fi';
+<FiUsers className='nameOfTheClass'> </FiUsers>;
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## React Router Dom
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [react-router-dom - Main Docs](https://reactrouter.com/web/guides/quick-start)
 
-### `yarn eject`
+- <Switch> renders the first child <Route> that matches
+- A <Route path="*"> always matches
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Github API
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Kullanici](https://api.github.com/users/ckymn)
+- [Projeler](https://api.github.com/users/ckymn/repos?per_page=100)
+- [Takipçiler](https://api.github.com/users/ckymn/followers)
+- [Sınırlı Takipçiler](https://api.github.com/users/ckymn/followers?per_page=100)
+- [Oran Sınırı](https://api.github.com/rate_limit)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Auth0
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [Auth0 - Main Docs](https://auth0.com/)
 
-## Learn More
+- Create Application
+- Choose : Single Page Web Applications
+- Choose : React
+- Go to Settings Tab
+- Copy/Paste Domain, ClientID - can be public (or use .env)
+- Add Domain -
+  for now http://localhost:3000 (DON'T COPY PASTE FROM URL BAR)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  - Allowed Callback URLs
+  - Allowed Logout URLs
+  - Allowed Web Origins
+  - SAVE CHANGES!!!!!!!!!!!!!!!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Connections Login Sırasında seçilecek sosyal hesaplar
+  email,social
+- Projeye auth0 dahil etme yolları
+- [React SDK Docs](https://auth0.com/docs/libraries/auth0-react)
+- [REACT SDK API Docs](https://auth0.github.io/auth0-react/)
